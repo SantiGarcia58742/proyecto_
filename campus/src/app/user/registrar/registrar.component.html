@@ -1,0 +1,42 @@
+<section class="main">
+
+    <form [formGroup]="registroForm" (ngSubmit)="sendValues()">
+
+        <mat-icon class="user-avatar">account_circle</mat-icon>
+
+        <mat-form-field appearance="legacy" class="example-full-width">
+            <mat-label>Nombre:</mat-label>
+            <input matInput formControlName="nombre" placeholder="Patricio">
+        </mat-form-field>
+    
+        <mat-form-field appearance="legacy" class="example-full-width">
+            <mat-label>Apellido:</mat-label>
+            <input matInput placeholder="Rodriguez" formControlName="apellido">
+        </mat-form-field>
+    
+
+
+            <mat-form-field class="example-full-width">
+            <mat-label>Email</mat-label>
+            <input type="email" matInput placeholder="Ej. pat@example.com" formControlName="email">
+            </mat-form-field>
+
+    
+        <mat-form-field appearance="legacy" class="example-full-width">
+            <mat-label>DNI:</mat-label>
+            <input matInput placeholder="44851709" formControlName="dni">
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" class="example-full-width">
+            <mat-label>Contraseña:</mat-label>
+            <input matInput [type]="hide ? 'password' : 'text'" formControlName="pass">
+            <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+            </button>
+        </mat-form-field>
+
+        <button mat-raised-button color="warn" class="btn-registro" [disabled]="!registroForm.valid">Crear Usuario</button>
+
+    </form>
+
+</section>
