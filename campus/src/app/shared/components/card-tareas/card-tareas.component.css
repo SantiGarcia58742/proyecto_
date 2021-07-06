@@ -1,0 +1,40 @@
+.anterior-tarea {
+  background-color: var(--oscuro-secundario);
+  min-width: 75vw;
+  margin-top: 1em;
+  padding: 1.5em;
+
+  border-radius: 10px;
+}
+
+mat-card-content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: row wrap;
+  padding: 0.25em;
+}
+
+.anterior-estado {
+  margin-right: 0.5em;
+}
+
+.anterior-estado mat-icon {
+  font-size: 3em;
+}
+
+.anterior-info mat-card-title {
+  font-size: 1.5em;
+  color: #fff;
+}
+
+.anterior-info mat-card-subtitle {
+  color: #ddd;
+  font-size: 0.9em;
+}
+
+mat-card-footer {
+  height: 3px;
+  background-color: var(--detalle-naranja);
+  border-radius: 10px;
+}

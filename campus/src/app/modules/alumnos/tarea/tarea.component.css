@@ -1,0 +1,84 @@
+.border-box {
+  box-sizing: border-box;
+}
+
+.tarea {
+  background-color: var(--oscuro-principal);
+  min-height: 95vh;
+  max-width: 100vw;
+  color: #fff;
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.tarea__consigna {
+  background-color: var(--oscuro-secundario);
+  width: 70vw;
+  height: 45vh;
+  padding: 1.5rem;
+  margin: 1rem;
+
+  border-radius: 10px;
+}
+
+.consigna-adjunto {
+  margin-top: 2rem;
+  width: 100%;
+  height: 25%;
+  background-color: var(--oscuro-principal);
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.tarea__entrega {
+  background-color: var(--oscuro-secundario);
+  width: 70vw;
+  height: 30vh;
+  padding: 2rem;
+  margin: -4rem 1rem 1rem 1rem;
+
+  border-radius: 10px;
+}
+
+.entrega-titulo {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.entrega-adjunto {
+  margin-top: 2rem;
+  width: 100%;
+  height: 50%;
+  background-color: var(--oscuro-principal);
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  border-radius: 10px;
+}
+
+.entrega-icono {
+  margin-left: 2rem;
+  font-size: 3rem;
+}
+
+.archivo-nombre {
+  margin-left: 0.5rem;
+  font-size: 1rem;
+  color: #666;
+}
+
+.entrega-acciones {
+  margin-top: 1.5rem;
+}
+
+.entrega-acciones button {
+  margin: 0 1rem 0 0;
+}

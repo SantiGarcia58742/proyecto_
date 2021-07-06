@@ -1,0 +1,26 @@
+.anuncio {
+  text-align: left;
+  background: var(--oscuro-principal);
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.contenido {
+  box-sizing: border-box;
+  color: #ddd;
+  font-weight: 300;
+}
+
+@media (max-width: 1024px) {
+  .anuncio {
+    max-width: 260px;
+    min-width: 260px;
+  }
+
+  .contenido {
+    min-width: 250px;
+    max-width: 250px;
+  }
+}

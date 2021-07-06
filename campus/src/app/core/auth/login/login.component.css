@@ -1,17 +1,17 @@
 .main {
-  height: 100vh;
+  height: 95vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: column wrap;
-  background-color: #222831;
+  background-color: #0f0f0f;
   color: #333;
 }
 
 form {
-  width: 600px;
-  min-height: 600px;
-  padding: 40px;
+  min-width: 600px;
+  min-height: 400px;
+  padding: 3em;
   background-color: #dddddd;
   box-sizing: border-box;
   border-radius: 25px;
@@ -28,7 +28,7 @@ form {
   color: #222831;
   width: 100px;
   height: 100px;
-  margin-bottom: 50px;
+  margin-bottom: 0.5em;
 }
 
 .example-form {
@@ -42,7 +42,7 @@ form {
 }
 
 .example-container .mat-form-field + .mat-form-field {
-  margin-left: 8px;
+  margin-left: 0.5em;
 }
 
 .example-right-align {

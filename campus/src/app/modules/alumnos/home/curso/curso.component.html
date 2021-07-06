@@ -1,0 +1,19 @@
+<section class="main">
+    <div class="materias">
+        <div class="clases" >
+
+            <app-card (click)="onClick(materia)" *ngFor="let materia of materias" [materia]=materia.nombre [profesor]="'Nombre Apellido'" [color]=materia.color [estado]=materia.estado>
+            </app-card>
+
+        </div>
+    </div>
+    <div class="tablon">
+        <app-anuncio [contenido]="'El dia 27/05 no concurrirán a taller por ausencia del Prof.'" [color]="'#f05454'"></app-anuncio>
+
+        <app-anuncio [contenido]="'El dia 25/05 no habrá actividad por feriado nacional'" [color]="'#6c5ce7'"></app-anuncio>
+
+        <app-anuncio [contenido]="'El dia 21/05 se retirarán 10:40hs por ausencia de la Prof. Fasolino'" [color]="'#00b894'"></app-anuncio>
+        
+        <button mat-raised-button color="warn" class="btn-anuncio" (click)="openDialog()">Nuevo anuncio</button>
+    </div>
+</section>

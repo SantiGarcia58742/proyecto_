@@ -1,0 +1,68 @@
+.main {
+  background-color: var(--oscuro-principal);
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.materias {
+  width: 75%;
+  height: 100%;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.clases {
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  flex-flow: column nowrap;
+}
+
+.tablon {
+  width: 25%;
+  height: 100vh;
+  background-color: var(--oscuro-secundario);
+  padding: 2em;
+  box-sizing: border-box;
+}
+
+.tablon {
+  text-align: center;
+}
+
+.ultimos-anuncios {
+  font-size: 2em;
+  font-weight: 600;
+}
+
+.btn-anuncio {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+
+  border-radius: 100px;
+}
+
+@media (max-width: 1200px) {
+  .materias {
+    width: 60%;
+  }
+  .tablon {
+    width: 40%;
+  }
+}
+
+@media (max-width: 768px) {
+  .tablon {
+    display: none;
+    width: 0;
+  }
+  .materias {
+    width: 100%;
+  }
+}

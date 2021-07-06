@@ -1,0 +1,40 @@
+<section class="materia">
+
+    <div class="materia__banner">
+        <div class="materia__titulo">
+            {{ materia }}
+        </div>
+        <div class="materia__profesor">
+        </div>
+    </div>
+
+    <div class="materia__contenido">
+        <div class="contenido-menu">
+            <ul>
+                <li>Anuncios</li>
+                <li>Tareas</li>
+                <li>Materiales</li>
+            </ul>
+        </div>
+        <div class="contenido">
+            <div class="ultima-tarea">
+                <p class="ultima-tarea__titulo">Capacidad y distribución fisica</p>
+                <p class="ultima-tarea__consigna">Luego de ver los temas de Productividad y Estrategias de flujo entramos al tema de Capacidad y Distribución Física íntimamente relacionados con los anteriores ya que su objeto es una mejora de la productividad.
+                    La Capacidad es la cantidad de producto que puede ser obtenido durante un cierto período de tiempo, es decir "la capacidad es la máxima velocidad de producción de una operación". Se expresa por medio de relaciones: toneladas/mes, volumen diario, número de servicios prestados/día, horas máquina/mes, horas hombre/mes, etc.
+                    En el pdf adjunto el tema de capacidad esta desarrollado hasta la página 13. Sobre este deberán hacer un esquema que demuestre una lectura atenta del mismo.</p>
+                <div class="ultima-tarea__btn">
+                    <button mat-raised-button>Desplegar tarea</button>
+                    <button mat-raised-button color="warn">Marcar como entregada</button>
+                </div>
+            </div>
+
+
+            <app-card-tareas (click)='onClick(tarea)' *ngFor="let tarea of tareas" [nombreTarea]="tarea.titulo" [fechaEntrega]="'Entrega: 09/07'" [estado]="tarea.estado" [color]="tarea.color"></app-card-tareas>
+            
+
+
+
+        </div>
+    </div>
+
+</section>

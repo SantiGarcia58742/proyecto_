@@ -1,0 +1,13 @@
+<mat-card class="anterior-tarea">
+    <mat-card-content>
+        <div class="anterior-estado">
+            <mat-icon inline=true [ngStyle]="{color: color}">{{ estado }}</mat-icon>
+        </div>
+        <div class="anterior-info">
+            <mat-card-title>{{ nombreTarea }}</mat-card-title>
+            <mat-card-subtitle>{{ fechaEntrega }}</mat-card-subtitle>
+        </div>
+    </mat-card-content>
+    <mat-card-footer [ngStyle]="{backgroundColor: color}">
+    </mat-card-footer>
+</mat-card>
