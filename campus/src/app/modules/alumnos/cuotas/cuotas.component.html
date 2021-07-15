@@ -1,0 +1,20 @@
+<section class="cuotas">
+    <div class="cuota__contenido">
+
+        <div class="contenido">
+            <div class="ultima-cuota">
+                <p class="ultima-cuota__titulo">Cuota Numero 1</p>
+                <p class="ultima-cuota__info">Estado: Sin pagar</p>
+                <div class="ultima-cuota__btn">
+                    <button mat-raised-button>Detalles cuota</button>
+                    <button mat-raised-button color="warn">Pagar</button>
+                </div>
+            </div>
+
+
+            <app-card-cuota  *ngFor="let cuota of cuotas" [tituloCuota]="cuota.monto" [vencimiento]="'Vencimiento: 09/07'" [estado]="cuota.estado" [color]="cuota.color"></app-card-cuota>
+            
+
+        </div>
+    </div>
+</section>

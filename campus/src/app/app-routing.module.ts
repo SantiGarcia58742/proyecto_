@@ -5,13 +5,15 @@ import { RegistrarComponent } from './core/auth/registrar/registrar.component';
 import { MateriaComponent } from './modules/alumnos/materia/materia.component';
 import { LoginComponent } from './core/auth/login/login.component';
 import { TareaComponent } from './modules/alumnos/tarea/tarea.component';
+import { CuotasComponent } from './modules/alumnos/cuotas/cuotas.component';
 
 const routes: Routes = [
   {path:"", component:LoginComponent},
   {path:"registrar", component:RegistrarComponent},
   {path:"curso", component:CursoComponent},
   {path:"curso/:nombre", component:MateriaComponent},
-  {path:"curso/:nombre/:id", component:TareaComponent}
+  {path:"curso/:nombre/:id", component:TareaComponent},
+  {path:"cuotas", component:CuotasComponent}
 ];
 
 @NgModule({

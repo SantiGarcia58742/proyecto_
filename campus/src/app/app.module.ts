@@ -18,6 +18,8 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatListModule} from '@angular/material/list';
 import {MatDialogModule} from '@angular/material/dialog';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+
 
 import { RegistrarComponent } from './core/auth/registrar/registrar.component';
 import { CursoComponent } from './modules/alumnos/home/curso/curso.component';
@@ -29,6 +31,8 @@ import { MateriaComponent } from './modules/alumnos/materia/materia.component';
 import { LoginComponent } from './core/auth/login/login.component';
 import { TareaComponent } from './modules/alumnos/tarea/tarea.component';
 import { CardTareasComponent } from './shared/components/card-tareas/card-tareas.component';
+import { CuotasComponent } from './modules/alumnos/cuotas/cuotas.component';
+import { CardCuotaComponent } from './modules/alumnos/cuotas/card-cuota/card-cuota.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +46,10 @@ import { CardTareasComponent } from './shared/components/card-tareas/card-tareas
     MateriaComponent,
     LoginComponent,
     TareaComponent,
-    CardTareasComponent
+    CardTareasComponent,
+    CuotasComponent,
+    CardCuotaComponent
+
   ],
   imports: [
     BrowserModule,
@@ -58,7 +65,8 @@ import { CardTareasComponent } from './shared/components/card-tareas/card-tareas
     MatToolbarModule,
     MatSidenavModule,
     MatListModule,
-    MatDialogModule
+    MatDialogModule,
+    MatCheckboxModule
   ],
   providers: [],
   bootstrap: [AppComponent],

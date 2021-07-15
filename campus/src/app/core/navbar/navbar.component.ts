@@ -12,8 +12,10 @@ export class NavbarComponent implements OnDestroy {
   mobileQuery: MediaQueryList;
 
   fillerNav = [
-    {name:"calendario"},
-    {name:"cursos"}
+    {name:"Calendario"},
+    {name:"Cursos"},
+    {name:"Cuotas"}
+
   ]
 
 

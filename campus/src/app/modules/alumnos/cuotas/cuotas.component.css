@@ -1,0 +1,41 @@
+.cuota__contenido {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--oscuro-principal);
+    position: absolute;
+    top: 0px;
+
+  }
+  .contenido {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: stretch;
+    align-items: center;
+  }
+
+  .ultima-cuota {
+    background-color: var(--oscuro-secundario);
+    padding: 2.5em;
+    border-radius: 10px;
+    width: 80%;
+    margin-top: 2em;
+  }
+  
+  .ultima-cuota__titulo {
+    font-size: 2em;
+    font-weight: 500;
+    color: #fff;
+  }
+  
+  .ultima-cuota__info {
+    font-size: 1em;
+    color: #979797;
+  }
+  
+  .ultima-cuota__btn button {
+    margin-top: 1em;
+    margin-right: 1em;
+  }
+  
+
+

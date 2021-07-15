@@ -1,0 +1,20 @@
+<mat-card class="anterior-tarea">
+    <mat-card-content>
+        <div class="anterior">
+<div class="anterior-estado">
+            <mat-icon inline=true [ngStyle]="{color: color}">{{ estado }}</mat-icon>
+        </div>
+        <div class="anterior-info">
+            <mat-card-title>{{ tituloCuota }}</mat-card-title>
+            <mat-card-subtitle>{{ vencimiento }}</mat-card-subtitle>
+            
+        </div>
+        </div>
+        
+        <div class="select"> 
+                <mat-checkbox color="warn" class="example-margin">Seleccionar cuota</mat-checkbox>
+            </div>
+    </mat-card-content>
+    <mat-card-footer [ngStyle]="{backgroundColor: color}">
+    </mat-card-footer>
+</mat-card>
